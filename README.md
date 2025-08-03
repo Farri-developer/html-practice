@@ -68,4 +68,27 @@ A separate `style.css` file is used to style the page:
 ---
 
 ## 📁 Folder Structure
+├── index.html
+├── style.css
+├── /Image
+│ └── game-image.jpg
+├── audio.mp3
+├── movie.mp4
+└── README.md
+
+
+---
+
+## 📌 How to View
+
+Just open `index.html` in any browser. No server needed.
+
+---
+
+## 📣 Author
+
+**Farhan Ayub**  
+© 2025 – All rights reserved.
+
+
 
