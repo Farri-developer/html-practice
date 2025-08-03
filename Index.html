@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Elements Demo</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
+
 <body>
 
-  <!-- Header Section -->
   <header>
     <h1>My Web Page</h1>
     <nav>
@@ -18,10 +20,8 @@
     <hr>
   </header>
 
-  <!-- Main Content Section -->
   <main>
 
-    <!-- Heading Levels -->
     <section>
       <h2>Heading Levels</h2>
       <h1>Heading 1</h1>
@@ -33,7 +33,6 @@
       <hr>
     </section>
 
-    <!-- Inline Tags in Paragraph -->
     <section>
       <h2>Inline Tags in Paragraph</h2>
       <p>This is a paragraph:
@@ -56,7 +55,6 @@
       <hr>
     </section>
 
-    <!-- Article -->
     <section>
       <h2>Article Example</h2>
       <article>
@@ -66,27 +64,25 @@
       <hr>
     </section>
 
-    <!-- Aside Section -->
     <section>
       <h2>Aside: HTML Tips & Entities</h2>
       <aside>
         <h3>Quick Tip</h3>
-        <p>Use semantic tags like <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code> for better HTML structure and SEO.</p>
+        <p>Use semantic tags like <code><section></code>, <code><article></code>, and <code><aside></code> for better HTML structure and SEO.</p>
         
         <h4>Common HTML Entities</h4>
         <p>
-          &lt; → &amp;lt; → Tag ko symbol banane ke liye<br>
-          &gt; → &amp;gt; → Closing tag dikhane ke liye<br>
-          &amp; → &amp;amp; → Ampersand ko as symbol dikhane ke liye<br>
-          &quot; → &amp;quot; → Double quote dikhane ke liye<br>
-          &apos; → &amp;apos; → Single quote dikhane ke liye<br>
-          &nbsp; → &amp;nbsp; → Non-breaking space
+          < → &lt; → lt Tag ko symbol banane ke liye<br>
+          > → &gt; → gt Closing tag dikhane ke liye<br>
+          & → &amp; → amp  Ampersand ko as symbol dikhane ke liye<br>
+          " → &quot; → qout Double quote dikhane ke liye<br>
+          ' → &apos; → apos Single quote dikhane ke liye<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; → &nbsp; → Non-breaking space
         </p>
       </aside>
       <hr>
     </section>
 
-    <!-- Anchor Links Section -->
     <section>
       <h2>Anchor Tags (Links)</h2>
       <a href="https://www.google.com/">Google</a><br>
@@ -97,7 +93,6 @@
       <hr>
     </section>
 
-    <!-- Target Attribute Examples -->
     <section>
       <h2>Target Attribute Examples in Links</h2>
       <p>
@@ -110,7 +105,6 @@
       <hr>
     </section>
 
-    <!-- iframe Demonstration -->
     <section>
       <h2>Using iframe (Inline Frame)</h2>
 
@@ -125,19 +119,253 @@
       <hr>
     </section>
 
-    <!-- Image Section -->
     <section>
       <h2>Using Image Tag</h2>
       <img src="/Image/刺客信条起源-亚鲁场景拍摄.jpg" alt="Game Scene" width="300" height="200">
       <hr>
     </section>
 
+    <section>
+      <h2>Other Useful Tags</h2>
+      <hr>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email_new">Email:</label>
+        <input type="email" id="email_new" name="email_new">
+        <p>This group of form controls is related.</p>
+      </fieldset>
+      <hr>
+
+      <h3>Button Tag</h3>
+      <button onclick="alert('Button clicked!')">Click Me!</button>
+      <hr>
+
+      <h3>Details and Summary Tags (Collapsible Content)</h3>
+      <details>
+        <summary>Click to reveal more info</summary>
+        <p>This is the extra information that is hidden by default. The user can toggle its visibility by clicking the summary.</p>
+      </details>
+      <hr>
+
+      <h3>Figure and Figcaption Tags</h3>
+      <figure>
+        <img src="/Image/刺客信条起源-亚鲁场景拍摄.jpg" alt="Assassin's Creed Origins game scene" width="400">
+        <figcaption>A scenic view from the video game Assassin's Creed Origins.</figcaption>
+      </figure>
+      <hr>
+
+      <h3>Graphics with Canvas and SVG</h3>
+      <h4>Canvas Example (A simple rectangle)</h4>
+      <p>This is a drawing created with the <code>&lt;canvas&gt;</code> tag. (Note: It requires JavaScript to draw.)</p>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+      <hr>
+
+      <h4>SVG Example (A circle)</h4>
+      <p>This is a vector graphic created with the <code>&lt;svg&gt;</code> tag.</p>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+      </svg>
+      <hr>
+
+      <h3>Media Playback</h3>
+      <h4>Audio Tag</h4>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p><small>Note: Replace "audio.mp3" with your own audio file path.</small></p>
+      <hr>
+
+      <h4>Video Tag</h4>
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p><small>Note: Replace "movie.mp4" with your own video file path.</small></p>
+      <hr>
+
+      <h3>Script, Style, and Noscript</h3>
+      <p>This page uses an internal <code>&lt;style&gt;</code> tag for its CSS.</p>
+      <p id="js-message">JavaScript is currently enabled.</p>
+      <noscript>
+        <p>This message is shown because JavaScript is disabled in your browser.</p>
+      </noscript>
+      <hr>
+
+      <h3>Quoting and References</h3>
+      <p>
+        The HTML acronym stands for <abbr title="HyperText Markup Language">HTML</abbr>.
+      </p>
+      <p>
+        As <cite>Jules Verne</cite> wrote, <q>Science, my lad, is made up of mistakes, but they are mistakes which it is useful to make, because they lead little by little to the truth.</q>
+      </p>
+      <blockquote>
+        <p>The only thing we have to fear is fear itself.</p>
+        <cite>Franklin D. Roosevelt</cite>
+      </blockquote>
+      <hr>
+
+      <h3>Progress Bars</h3>
+      <h4>Progress Tag (Shows a task's progress)</h4>
+      <label for="file">File download progress:</label>
+      <progress id="file" value="100" max="100"> 32% </progress>
+      <hr>
+
+      <h4>Meter Tag (Shows a scalar measurement)</h4>
+      <label for="storage">Disk usage:</label>
+      <meter id="storage" value="0.4">60%</meter>
+      <hr>
+
+    </section>
+
+    <section>
+      <h1>Nested List Example</h1>
+      
+      <ul>
+        <li>Fruits</li>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Cherry</li>
+        </ul>
+
+        <li>Vegetables</li>
+        <ol>
+          <li>Carrot</li>
+          <li>Broccoli</li>
+          <li>Spinach</li>
+        </ol>
+      </ul>
+
+      <ol>
+        <li>Languages</li>
+        <ul>
+          <li>Html</li>
+          <li>CSS</li>
+          <li>jAVAScript</li>
+        </ul>
+        <li>FrameWorks</li>
+        <ul>
+          <li>React</li>
+          <li>Angular</li>
+        </ul>
+      </ol>
+      <hr>
+    </section>
+
+    <section>
+      <h2>Complete Table Example</h2>
+      <table class="table" border="1" >
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row"> 1</td>
+            <td>Ali</td>
+            <td>Maths</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ahmed</td>
+            <td>Science</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+    </section>
+
+    <section>
+      <h1>Registration Form</h1>
+
+      <form action="/Dummy_File.html" method="get">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">--Select--</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+        </select>
+        <br><br>
+
+        <label for="about">About You:</label><br>
+        <textarea id="about" name="about" rows="4" cols="50" placeholder="Write something about yourself..."></textarea>
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+
+        <input type="hidden" name="formType" value="registration">
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </form>
+      <hr>
+    </section>
+      
+    <section>
+      <h2>Search Form (GET Method)</h2>
+
+      <form action="/search" method="GET">
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="q" placeholder="Type something...">
+        <br><br>
+        <input type="submit" value="Search">
+      </form>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Farhan Ayub | All rights reserved.</p>
+    <p>© 2025 Farhan Ayub | All rights reserved.</p>
   </footer>
 
+  <script>
+    // This is for the canvas example.
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#FF0000';
+    ctx.fillRect(0, 0, 150, 75);
+  </script>
 </body>
 </html>
