@@ -1,4 +1,4 @@
-div{
+/* div{
     height: 100px;
     background-color: aqua;
     width: 250px;
@@ -6,4 +6,35 @@ div{
     border-style: dotted;
     border-color: black;
     text-align: center;
+} */
+/* 
+div{
+    height :100px;
+    background-color: aqua;
+    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+   
+    padding-top: 50px;
+} */
+div{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
 }
+
+#box1{
+    background-color: red;
+    
+
+}
+#box2{
+    background-color: blue;
+}
+#box3{
+    background-color: green;
+}
+
