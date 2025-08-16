@@ -1,0 +1,53 @@
+div{
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 0px;
+   
+
+}
+
+body{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    align-self: start;
+    color: white;
+   
+   
+}
+li{
+    margin-right: 90PX;
+    list-style-type: none;
+   
+   
+    display: inline;
+}
+
+
+
+.outer{
+    height: 400px   ;
+    width: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
+
+
+.inner{
+    height: 100px;   ;
+    width: 100px;
+    background-color: blue;
+    align-self: flex-start;
+
+    
+
+}

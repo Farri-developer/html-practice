@@ -1,0 +1,30 @@
+/* ----------------- Old Code (Commented Out) -----------------*/
+div {
+    height: 100px;              /* Har div ki height 100px hogi*/ 
+    width: 100px;               /* Har div ki width 100px hogi */
+    background-color: aqua;     /* Background color aqua hoga */
+    border: 2px solid black;    /* 2px black border hogi */
+    display: inline-block;      /* Div ek line mein inline blocks ki tarah show hoga */
+}
+
+#box1 {
+    position: relative;         /* Position ko relative set kiya gaya */
+    top: 50px;                  /* Div ko upar se 50px neeche shift karega */
+}
+---------------------------------------------------------------- */
+
+
+/* ----------------- New Code ----------------- */
+div {
+    height: 200px;                      /* Har div ki height 200px hogi */
+    width: 200px;                       /* Har div ki width 200px hogi */
+    padding: 20px;                      /* Content aur border ke darmiyan 20px gap hoga */
+    color: brown;                       /* Text ka color brown hoga */
+    background-image: url(/Image/download.jpeg);  /* Div ke background mein ek image set hogi */
+    background-size: cover;             /* Image poore div ko cover kar legi */
+    border: 5px solid blue;             /* 5px ka solid blue border milega */
+    text-align: center;                 /* Text div ke andar center align hoga */
+    position: sticky;                   /* Div scroll karne per apne jagah sticky ho jata hai */
+    left: 100%;                         /* Div ko left se 100% shift kar diya (screen se bahar chala jayega) */
+    top: 20px;                          /* Top se 20px distance maintain karega jab sticky hoga */
+}
